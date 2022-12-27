@@ -1,6 +1,5 @@
 from random import randrange
 from turtle import *
-
 from freegames import square, vector
 
 food = vector(0, 0)
@@ -37,6 +36,7 @@ def move():
     if head in snake:
         square(head.x, head.y, 9, 'red')
         update()
+        print ("You Died!!")
         return
 
     snake.append(head)
